@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Information Member";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>@ViewData["Title"]</h2>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <form asp-action="Success" asp-controller="Register">
+            Username : <input type="text" id="txt_Username" name="txt_Username" /> <br />
+            Password : <input type="text" id="txt_Password" name="txt_Password" /> <br />
+            Confirm Password : <input type="text" id="txt_PasswordCFM" name="txt_PasswordCFM" /> <br />
+            <input type="submit" value="Check OTP" id="btn_Next" />
+        </form>
+    </div>
+</div>
